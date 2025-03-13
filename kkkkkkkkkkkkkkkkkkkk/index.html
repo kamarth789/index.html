@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Premium Tic-Tac-Toe</h1>
+        <div class="scoreboard">
+            <div>Player X: <span id="score-x">0</span></div>
+            <div>Player O: <span id="score-o">0</span></div>
+        </div>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Pro Text-to-Speech App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ultra Pro Text-to-Speech</h1>
+        <textarea id="text-input" placeholder="Enter text to speak..."></textarea>
+
+        <!-- Voice Selection -->
+        <div class="control-group">
+            <label for="voice-select">Select Voice:</label>
+            <select id="voice-select"></select>
+            <button id="preview-voice">Preview Voice</button>
+        </div>
+
+        <!-- Speed, Pitch, Volume -->
+        <div class="control-group">
+            <label for="speed">Speed:</label>
+            <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1">
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </div>
+
+        <!-- Emotional Tones -->
+        <div class="emotion-buttons">
+            <button id="sad-btn">Sadly</button>
+            <button id="happy-btn">Happily</button>
+            <button id="angry-btn">Angrily</button>
+        </div>
+
+        <!-- Call Feature -->
+        <div class="call-feature">
+            <label for="call-number">Call Number (India Only):</label>
+            <input type="text" id="call-number" placeholder="Enter phone number">
+            <button id="call-btn">Call</button>
+        </div>
+
+        <!-- Additional Features -->
+        <div class="additional-features">
+            <button id="copy-btn">Copy Text</button>
+            <button id="share-btn">Share</button>
+            <button id="history-btn">Speech History</button>
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

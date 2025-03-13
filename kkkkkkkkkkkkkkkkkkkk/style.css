@@ -1,0 +1,177 @@
+/* Premium Black Theme */
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    background-color: #222;
+    border: 2px solid #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #333;
+}
+
+.cell.x::before {
+    content: 'X';
+    color: #0f0;
+}
+
+.cell.o::before {
+    content: 'O';
+    color: #f00;
+}
+
+#reset-btn {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #0c0;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 24px;
+}
+/* Hacker Theme */
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #0f0;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.control-group, .emotion-buttons, .call-feature, .additional-features {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="range"], input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #222;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 5px;
+}
+
+button {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #0c0;
+}
+
+.emotion-buttons button {
+    background-color: #ff0;
+    color: #000;
+}
+
+.emotion-buttons button:hover {
+    background-color: #cc0;
+}
+
+.call-feature button {
+    background-color: #f00;
+    color: #fff;
+}
+
+.call-feature button:hover {
+    background-color: #c00;
+}
+
+.additional-features button {
+    background-color: #00f;
+    color: #fff;
+}
+
+.additional-features button:hover {
+    background-color: #00c;
+}
